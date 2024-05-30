@@ -1,169 +1,162 @@
 # AI-900: Microsoft Azure AI Fundamentals Exam Preparation Guide
 
-## Table of Contents
-1. [Introduction to AI](#1-introduction-to-ai)
-   - [What is AI?](#what-is-ai)
-   - [Types of AI](#types-of-ai)
-2. [Machine Learning](#2-machine-learning)
-   - [Definition](#definition)
-   - [Types of Machine Learning](#types-of-machine-learning)
-3. [Core Azure AI Services](#3-core-azure-ai-services)
-   - [Azure Machine Learning](#azure-machine-learning)
-   - [Azure Cognitive Services](#azure-cognitive-services)
-     - [Vision](#vision)
-     - [Speech](#speech)
-     - [Language](#language)
-     - [Decision](#decision)
-   - [Azure Bot Services](#azure-bot-services)
-4. [Practical Applications](#4-practical-applications)
-   - [Image and Video Analysis](#image-and-video-analysis)
-   - [Natural Language Processing (NLP)](#natural-language-processing-nlp)
-   - [Conversational AI](#conversational-ai)
-5. [Security, Privacy, and Ethical Considerations](#5-security-privacy-and-ethical-considerations)
-6. [Exam Preparation Tips](#6-exam-preparation-tips)
-7. [Sample Questions](#7-sample-questions)
-8. [Recap and Questions](#8-recap-and-questions)
+### 1. Describe Artificial Intelligence Workloads and Considerations (15–20%)
 
-## 1. Introduction to AI
+**Identify Features of Common AI Workloads:**
 
-### What is AI?
-- **Definition:** AI is the simulation of human intelligence processes by machines, especially computer systems.
-- **Components of AI:** 
-  - **Perception:** The ability to interpret data from the world.
-  - **Reasoning:** The ability to solve problems and make decisions.
-  - **Learning:** The ability to improve performance based on experience.
-  - **Interaction:** The ability to communicate with humans and other systems.
+- **Content Moderation:**
+  - **Purpose:** Automatically detect and filter inappropriate content to ensure community guidelines are maintained.
+  - **Applications:** Social media platforms, online forums, video-sharing sites, and any user-generated content platforms.
+  - **Techniques:** Uses techniques like image recognition, text analysis, and natural language processing.
+  - **Tools:** Azure Content Moderator can scan text, images, and videos for offensive material, suggest edits, and block content.
 
-### Types of AI
-- **Narrow AI:** 
-  - **Definition:** AI designed for a specific task.
-  - **Examples:** Voice assistants like Siri and Alexa.
-- **General AI:** 
-  - **Definition:** AI with general cognitive abilities like a human.
-  - **Examples:** Theoretical concept, not yet realized.
+- **Personalization:**
+  - **Purpose:** Customize user experiences based on individual preferences and behaviors to enhance engagement and satisfaction.
+  - **Applications:** E-commerce recommendations, content streaming services (e.g., Netflix, Spotify), personalized marketing emails.
+  - **Techniques:** Machine learning models that analyze user data and behaviors to make predictions.
+  - **Tools:** Azure Personalizer, which uses reinforcement learning to provide personalized experiences.
 
-## 2. Machine Learning
+**Identify Specific AI Workloads:**
 
-### Definition
-- Machine Learning (ML) is a subset of AI that involves training algorithms to learn patterns from data and make predictions or decisions without being explicitly programmed.
-
-### Types of Machine Learning
-- **Supervised Learning:**
-  - **Definition:** The model is trained on labeled data.
-  - **Examples:** Classification (e.g., email spam detection), Regression (e.g., predicting house prices).
-- **Unsupervised Learning:**
-  - **Definition:** The model works with unlabeled data to find hidden patterns.
-  - **Examples:** Clustering (e.g., customer segmentation), Association (e.g., market basket analysis).
-- **Reinforcement Learning:**
-  - **Definition:** The model learns by interacting with an environment and receiving rewards or penalties.
-  - **Examples:** Training a robot to navigate a maze, game playing like AlphaGo.
-
-## 3. Core Azure AI Services
-
-### Azure Machine Learning
-- **Purpose:** A platform to build, train, and deploy machine learning models.
-- **Key Features:** 
-  - **Automated ML:** Automatically find the best model and hyperparameters.
-  - **Azure ML Studio:** A visual interface for building and deploying models.
-  - **Model Registry:** Manage and deploy models.
-- **Use Case:** Predicting maintenance needs for machinery using sensor data.
-
-### Azure Cognitive Services
-
-#### Vision
 - **Computer Vision:**
-  - **Purpose:** Extract information from images.
-  - **Capabilities:** Object detection, image tagging, OCR.
-- **Face API:**
-  - **Purpose:** Detect and analyze human faces.
-  - **Capabilities:** Facial recognition, emotion detection.
+  - **Definition:** Technology that allows computers to interpret and make decisions based on visual inputs.
+  - **Applications:** Security and surveillance, autonomous vehicles, medical imaging (e.g., detecting tumors), retail (e.g., inventory management).
+  - **Techniques:** Image classification, object detection, facial recognition, and OCR.
 
-#### Speech
-- **Speech-to-Text:**
-  - **Purpose:** Convert spoken language to text.
-  - **Capabilities:** Real-time transcription, voice commands.
-- **Text-to-Speech:**
-  - **Purpose:** Convert text to spoken audio.
-  - **Capabilities:** Natural-sounding voice output, customizable voices.
+- **Natural Language Processing (NLP):**
+  - **Definition:** Enables machines to understand, interpret, and generate human language.
+  - **Applications:** Chatbots, sentiment analysis, language translation, voice assistants (e.g., Alexa, Google Assistant).
+  - **Techniques:** Text analytics, language modeling, speech-to-text, text-to-speech, sentiment analysis.
 
-#### Language
-- **Text Analytics:**
-  - **Purpose:** Analyze text for insights.
-  - **Capabilities:** Sentiment analysis, key phrase extraction, language detection.
-- **Translator:**
-  - **Purpose:** Real-time translation of text into multiple languages.
-  - **Capabilities:** Support for numerous languages, high accuracy.
+- **Knowledge Mining:**
+  - **Definition:** Extracting useful information from vast amounts of unstructured data.
+  - **Applications:** Legal document analysis, enterprise search, customer service (e.g., identifying common issues), research.
+  - **Techniques:** Text extraction, entity recognition, sentiment analysis, search indexing.
+  - **Tools:** Azure Cognitive Search, which integrates various AI capabilities for extracting insights from data.
 
-#### Decision
-- **Personalizer:**
-  - **Purpose:** Provide personalized content recommendations.
-  - **Capabilities:** Machine learning-based personalization.
-- **Anomaly Detector:**
-  - **Purpose:** Identify unusual patterns in data.
-  - **Capabilities:** Detect anomalies in time series data.
+- **Document Intelligence:**
+  - **Definition:** Automating the extraction of data from documents and understanding their content.
+  - **Applications:** Invoice processing, contract analysis, form data extraction.
+  - **Techniques:** OCR, natural language processing, and machine learning.
+  - **Tools:** Azure Form Recognizer, which automates the extraction of text, key/value pairs, and tables from documents.
 
-### Azure Bot Services
-- **Purpose:** Create intelligent, conversational bots.
-- **Key Features:** 
-  - **QnA Maker:** Convert FAQs into a bot-friendly format.
-  - **Bot Framework SDK:** Tools and SDKs for building bots.
-- **Use Case:** Customer support chatbot for an e-commerce site.
+- **Generative AI:**
+  - **Definition:** AI systems that can generate new content, such as text, images, or code, based on training data.
+  - **Applications:** Content creation (e.g., articles, marketing copy), design (e.g., generating artwork), coding assistance.
+  - **Techniques:** Deep learning models, especially generative adversarial networks (GANs) and transformer models.
+  - **Tools:** Azure OpenAI Service, which provides access to advanced models for generating text, images, and more.
 
-## 4. Practical Applications
+**Guiding Principles for Responsible AI:**
 
-### Image and Video Analysis
-- **Computer Vision:**
-  - **Purpose:** Analyzing and extracting metadata from images.
-  - **Capabilities:** Object detection, OCR for text extraction.
-- **Video Indexer:**
-  - **Purpose:** Extract insights from videos.
-  - **Capabilities:** Face detection, speech transcription, scene segmentation.
+- **Fairness:**
+  - **Goal:** Ensure AI systems do not perpetuate bias and are equitable across different user groups.
+  - **Methods:** Bias detection and mitigation strategies, diverse training datasets.
+  - **Considerations:** Regular audits, fairness metrics, and inclusive design practices.
 
-### Natural Language Processing (NLP)
-- **Text Analytics:**
-  - **Purpose:** Analyzing text data for insights.
-  - **Capabilities:** Sentiment analysis, language detection, named entity recognition.
-- **Translator:**
-  - **Purpose:** Translating text between languages.
-  - **Capabilities:** Support for numerous languages, real-time translation.
+- **Reliability and Safety:**
+  - **Goal:** Develop AI systems that are robust, perform consistently, and handle errors gracefully.
+  - **Methods:** Rigorous testing, fail-safes, continuous monitoring.
+  - **Considerations:** Validating models with real-world data, ensuring systems can handle unexpected inputs.
 
-### Conversational AI
-- **QnA Maker:**
-  - **Purpose:** Converting FAQs into a bot-friendly format.
-  - **Capabilities:** Creating a knowledge base for bots.
-- **Azure Bot Service:**
-  - **Purpose:** Building and deploying bots.
-  - **Capabilities:** Integration with multiple channels (e.g., websites, Microsoft Teams).
+- **Privacy and Security:**
+  - **Goal:** Protect user data and maintain confidentiality throughout the AI lifecycle.
+  - **Methods:** Data encryption, secure data storage, access controls, privacy-preserving algorithms.
+  - **Considerations:** Compliance with regulations (e.g., GDPR), minimizing data retention, anonymizing data.
 
-## 5. Security, Privacy, and Ethical Considerations
-- **Data Privacy:** Ensure data protection and compliance with regulations (e.g., GDPR).
-- **Ethical AI:** Avoid biases, ensure fairness, transparency in AI models.
+- **Inclusiveness:**
+  - **Goal:** Make AI accessible and beneficial to all, considering diverse user needs and abilities.
+  - **Methods:** Designing inclusive interfaces, ensuring accessibility standards.
+  - **Considerations:** Engaging with diverse user groups during development, accessibility testing.
 
-## 6. Exam Preparation Tips
-- **Understand the Concepts:** Grasp the basic concepts and terminology related to AI and machine learning.
-- **Hands-on Practice:** Use Azure services to build simple AI solutions. Familiarize yourself with the Azure portal and tools like Azure Machine Learning Studio.
-- **Study Material:** Use Microsoft Learn, Azure documentation, and other resources to deepen your understanding.
-- **Practice Tests:** Take practice exams to familiarize yourself with the format and types of questions.
+- **Transparency:**
+  - **Goal:** Provide clear explanations of how AI systems make decisions and operate.
+  - **Methods:** Explainable AI techniques, documentation, user-friendly explanations.
+  - **Considerations:** Communicating model logic, decision-making processes, and limitations.
 
-## 7. Sample Questions
+- **Accountability:**
+  - **Goal:** Establish mechanisms for responsibility and oversight in AI development and deployment.
+  - **Methods:** Maintaining logs, performing regular audits, implementing governance frameworks.
+  - **Considerations:** Defining roles and responsibilities, establishing clear procedures for addressing issues.
 
-1. **What type of machine learning is used when the model is trained with labeled data?**
-   - A. Supervised Learning
-   - B. Unsupervised Learning
-   - C. Reinforcement Learning
+### 2. Describe Fundamental Principles of Machine Learning on Azure (20–25%)
 
-2. **Which Azure service is used to create conversational bots?**
-   - A. Azure Machine Learning
-   - B. Azure Cognitive Services
-   - C. Azure Bot Service
+**Common Machine Learning Techniques:**
 
-3. **What is the purpose of the Anomaly Detector service in Azure Cognitive Services?**
-   - A. To detect faces in images
-   - B. To identify unusual patterns in data
-   - C. To translate text between languages
+- **Regression:**
+  - **Purpose:** Predicting continuous values based on input features.
+  - **Applications:** Predicting house prices, stock prices, sales forecasting.
+  - **Algorithms:** Linear regression, polynomial regression, support vector regression.
+  - **Tools:** Azure Machine Learning, which provides tools for building, training, and deploying regression models.
 
-## 8. Recap and Questions
-- **Do you have any questions about these topics so far?**
-- **Which area would you like to explore in more detail or practice with some examples?**
-```
+- **Classification:**
+  - **Purpose:** Assigning inputs to predefined categories or labels.
+  - **Applications:** Email spam detection, disease diagnosis, image classification (e.g., identifying cats vs. dogs).
+  - **Algorithms:** Logistic regression, decision trees, random forests, support vector machines, neural networks.
+  - **Tools:** Azure Machine Learning, offering support for a variety of classification algorithms.
 
+- **Clustering:**
+  - **Purpose:** Grouping similar data points together without predefined labels.
+  - **Applications:** Customer segmentation, market research, anomaly detection.
+  - **Algorithms:** K-means, hierarchical clustering, DBSCAN.
+  - **Tools:** Azure Machine Learning, which includes clustering algorithms and tools for data exploration.
+
+- **Deep Learning:**
+  - **Purpose:** Using neural networks with multiple layers to model complex patterns in data.
+  - **Applications:** Image recognition, speech recognition, natural language processing.
+  - **Algorithms:** Convolutional neural networks (CNNs), recurrent neural networks (RNNs), transformers.
+  - **Tools:** Azure Machine Learning, Azure Deep Learning Virtual Machines, Azure Databricks.
+
+**Core Machine Learning Concepts:**
+
+- **Features and Labels:**
+  - **Features:** Input variables used to make predictions.
+  - **Labels:** The outcomes or targets being predicted.
+  - **Example:** In a housing price prediction model, features might include the number of bedrooms, while the label is the price of the house.
+
+- **Training and Validation Datasets:**
+  - **Training Dataset:** Used to fit the machine learning model.
+  - **Validation Dataset:** Used to tune model parameters and assess performance, ensuring the model generalizes well to new data.
+  - **Example:** Splitting a dataset into 80% training and 20% validation to train and evaluate a model.
+
+**Azure Machine Learning Capabilities:**
+
+- **Automated Machine Learning (AutoML):**
+  - **Purpose:** Simplifies the process of creating machine learning models by automating algorithm selection, hyperparameter tuning, and feature selection.
+  - **Features:** User-friendly interface, support for various data types, model interpretability.
+  - **Tools:** Azure Automated Machine Learning, which provides a drag-and-drop interface and APIs.
+
+- **Data and Compute Services:**
+  - **Purpose:** Provide scalable infrastructure for data processing, model training, and deployment.
+  - **Features:** Scalable compute resources, integration with data storage solutions, support for distributed training.
+  - **Tools:** Azure Machine Learning Compute, Azure Databricks, Azure Data Lake Storage.
+
+- **Model Management and Deployment:**
+  - **Purpose:** Manage the lifecycle of machine learning models, from development to deployment and monitoring.
+  - **Features:** Model versioning, deployment to cloud or edge, monitoring and logging, integration with CI/CD pipelines.
+  - **Tools:** Azure Machine Learning, Azure Kubernetes Service for deploying models as scalable web services.
+
+### 3. Describe Features of Computer Vision Workloads on Azure (15–20%)
+
+**Types of Computer Vision Solutions:**
+
+- **Image Classification:**
+  - **Purpose:** Categorizing images into predefined classes.
+  - **Applications:** Identifying objects in images (e.g., classifying animals, products), medical imaging (e.g., detecting diseases).
+  - **Techniques:** Convolutional neural networks (CNNs).
+  - **Tools:** Azure Custom Vision, which allows users to build and deploy custom image classification models.
+
+- **Object Detection:**
+  - **Purpose:** Identifying and locating objects within an image.
+  - **Applications:** Autonomous vehicles (detecting pedestrians and other vehicles), security (identifying threats), retail (inventory management).
+  - **Techniques:** CNNs, region-based convolutional neural networks (R-CNNs).
+  - **Tools:** Azure Custom Vision, Azure AI Vision.
+
+- **Optical Character Recognition (OCR):**
+  - **Purpose:** Converting images of text into machine-readable text.
+  - **Applications:** Digitizing printed documents, extracting text from images for data entry automation.
+  - **Techniques:** Deep learning-based text recognition.
+  - **Tools:** Azure AI Vision, which provides OCR capabilities.
+
+- **Facial Detection and Analysis:**
+  - **Purpose:** Recognizing and analyzing facial features, emotions, and identities.
+  - **Applications:** Security (facial recognition for access control), retail (analyzing customer emotions), social media (tagging people in photos
